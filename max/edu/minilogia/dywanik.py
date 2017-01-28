@@ -50,7 +50,7 @@ def kafel():
         fd(8 * kw)
         lt(90)
         fd(kw * 8)
-        lt(91)
+        lt(90)
         pd()
 
 
