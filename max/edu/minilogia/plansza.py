@@ -1,4 +1,4 @@
-from turtle import *
+from turtle import Turtle
 
 __bok__ = 400
 __color_1__ = "red"
