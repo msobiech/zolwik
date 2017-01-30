@@ -7,7 +7,6 @@ __wypelnienie___ = "black"
 p = Turtle()
 
 
-
 def tlo():
     p.begin_fill()
     for i in range(4):
