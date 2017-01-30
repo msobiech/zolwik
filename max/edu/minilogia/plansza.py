@@ -1,4 +1,4 @@
-from turtle import *
+from turtle import Turtle
 
 __bok__ = 400
 __color_1__ = "red"
@@ -145,5 +145,5 @@ def plansza(n):
     p.getscreen().update()
 
 
-plansza(4)
+plansza(10)
 p.getscreen().mainloop()
