@@ -2,7 +2,7 @@ from turtle import Turtle
 
 __bok__ = 400
 __color_1__ = "red"
-__color_2__ = "green"
+__color_2__ = "blue"
 __wypelnienie___ = "black"
 p = Turtle()
 
