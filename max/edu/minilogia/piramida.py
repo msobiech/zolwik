@@ -6,7 +6,7 @@ p = Turtle()
 
 def kwadracik(bok):
     p.begin_fill()
-    p.color("black", "red")
+    p.color("black", "orange")
     przek1 = bok / 2 * sqrt(2)
     bok1 = int(przek1 / 5)
     przek2 = bok1 * sqrt(2)
