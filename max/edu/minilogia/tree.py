@@ -34,8 +34,9 @@ def tree(plist, l, a, f):
             q.right(a)
             lst.append(p)
             lst.append(q)
-        for x in tree(lst, l*f, a, f):
+        for x in tree(lst, l * f, a, f):
             yield None
+
 
 def maketree():
     p = Turtle()
@@ -51,13 +52,15 @@ def maketree():
         pass
     print(len(p.getscreen().turtles()))
 
+
 def main():
-    a=clock()
+    a = clock()
     tracer(30, 0)
     maketree()
     update()
-    b=clock()
-    return "done: %.2f sec." % (b-a)
+    b = clock()
+    return "done: %.2f sec." % (b - a)
+
 
 if __name__ == "__main__":
     msg = main()

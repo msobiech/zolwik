@@ -1,8 +1,8 @@
 from turtle import Turtle
 
 __bok__ = 400
-__color_1__ = "yellow"
-__color_2__ = "blue"
+__color_1__ = "red"
+__color_2__ = "green"
 __wypelnienie___ = "black"
 p = Turtle()
 
@@ -117,7 +117,6 @@ def przejscie2(n):
 
 
 def pasy(n):
-
     pas(n, "%s" % __color_1__)
     przejscie(n)
     pas(n, "%s" % __color_2__)

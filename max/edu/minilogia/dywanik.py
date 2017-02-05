@@ -22,13 +22,13 @@ def ksztalt():
     color("green", "green")
     fd(3 * kw)
     lt(135)
-    fd((kw*sqrt(2)*3))
+    fd((kw * sqrt(2) * 3))
     rt(45)
     fd(kw)
     lt(90)
     fd(kw)
     rt(45)
-    fd(3*(kw*sqrt(2)))
+    fd(3 * (kw * sqrt(2)))
     lt(135)
     fd(3 * kw)
     lt(45)
@@ -38,7 +38,6 @@ def ksztalt():
 
 
 def kafel():
-
     for i in range(2):
         trojkat()
         pu()
@@ -68,8 +67,8 @@ def kafel2():
 
 
 def wiersz(n):
-    for i in range (n):
-        if (i%2==0):
+    for i in range(n):
+        if (i % 2 == 0):
             kafel2()
         else:
             kafel()
@@ -78,18 +77,19 @@ def wiersz(n):
         pd()
 
 
-def dywan(szer,wys):
+def dywan(szer, wys):
     for i in range(wys):
         wiersz(szer)
-        if(i % 2 == 0):
+        if (i % 2 == 0):
             lt(180)
         else:
             lt(90)
             pu()
-            fd(kw*16)
+            fd(kw * 16)
             lt(90)
 
+
 tracer(0)
-dywan(4,3)
+dywan(4, 3)
 update()
 done()

@@ -8,7 +8,6 @@ def kwadrat(pen, a):
     tracer(130, 90)
     pen.rt(45)
     for i in range(4):
-
         pen.fd(a)
         pen.lt(90)
     pen.lt(45)
@@ -44,6 +43,7 @@ def peczek(n, y):
         p.hideturtle()
         p.lt(90 + i * kat)
         palka(p, n)
+
 
 peczek(3, 6)
 mainloop()

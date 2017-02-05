@@ -19,9 +19,9 @@ def rab(p):
     p.begin_fill()
     p.color("black", "green")
     for i in range(2):
-        p.fd(bok/3)
+        p.fd(bok / 3)
         p.lt(120)
-        p.fd(bok/3)
+        p.fd(bok / 3)
         p.lt(60)
     p.end_fill()
 
@@ -41,8 +41,8 @@ def tlo(p):
 
 def czesc(p):
     rab(p)
-    p.fd(bok/3)
-    szesciokat(bok/3, "lightgreen", p)
+    p.fd(bok / 3)
+    szesciokat(bok / 3, "lightgreen", p)
 
 
 def skocz(p):
@@ -60,7 +60,7 @@ def srodek():
     tlo(p)
     for i in range(6):
         czesc(p)
-        p.fd(bok/3*2)
+        p.fd(bok / 3 * 2)
         p.lt(60)
 
 
@@ -75,7 +75,7 @@ def galaz(r):
         r.fd(ilosc)
         ilosc -= __delta
         r.rt(60)
-        r.fd(ilosc/2)
+        r.fd(ilosc / 2)
         r.lt(180)
         r.pd()
 
@@ -90,6 +90,7 @@ def kwiat():
         galaz(l)
         print(str(i))
     update()
+
 
 kwiat()
 mainloop()
