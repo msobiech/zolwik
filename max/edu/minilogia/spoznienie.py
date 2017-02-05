@@ -3,7 +3,7 @@ from turtle import Turtle, mainloop, tracer, update
 
 # http://minilogia.oeiizk.waw.pl/archiwum/zadania/3etap07.pdf
 
-bok = 400 / 12
+bok = 500 / 12
 p = Turtle()
 
 
