@@ -4,11 +4,14 @@ from math import sqrt
 
 p = Turtle()
 szer = 360
+kol1 = "black"
+kol2 = "blue"
+kol3 = "yellow"
 
 
 def ksztalt(bok):
     p.begin_fill()
-    p.color("black","blue")
+    p.color(kol1, kol2)
     przek = sqrt(2)*bok
     p.fd(6*bok)
     p.lt(90)
@@ -45,7 +48,7 @@ def ksztalt(bok):
 
 def ksztalt2(bok):
     p.begin_fill()
-    p.color("black", "yellow")
+    p.color(kol1, kol3)
     p.fd(bok)
     p.lt(90)
     p.fd(bok*3)
@@ -59,7 +62,7 @@ def ksztalt2(bok):
 
 def ksztalt3(bok):
     p.begin_fill()
-    p.color("black","yellow")
+    p.color(kol1,kol3)
     przek = sqrt(2) * bok
     p.rt(45)
     p.fd(przek)
@@ -87,7 +90,7 @@ def ksztalt3(bok):
 
 def kwadrat(przek):
     p.begin_fill()
-    p.color("black", "yellow")
+    p.color(kol1, kol3)
     for i in range(4):
         p.fd(przek)
         p.lt(90)
@@ -143,9 +146,9 @@ def przejscie1(n, bok):
 
 def piramida(n):
     il = n
-    bok = 360 / (n*5+5)
+    bok = szer / (n*5+5)
     p.pu()
-    p.bk(360/2)
+    p.bk(szer/2)
     p.rt(90)
     p.fd(7*bok*n/2)
     p.lt(90)
