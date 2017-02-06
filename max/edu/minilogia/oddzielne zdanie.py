@@ -3,6 +3,7 @@ from math import sqrt
 
 
 p = Turtle()
+szer = 360
 
 
 def ksztalt(bok):
@@ -86,7 +87,7 @@ def ksztalt3(bok):
 
 def kwadrat(przek):
     p.begin_fill()
-    p.color("black","yellow")
+    p.color("black", "yellow")
     for i in range(4):
         p.fd(przek)
         p.lt(90)
@@ -145,13 +146,16 @@ def piramida(n):
     bok = 360 / (n*5+5)
     p.pu()
     p.bk(360/2)
+    p.rt(90)
+    p.fd(7*bok*n/2)
+    p.lt(90)
     p.pd()
     for i in range(n):
         pas(il, bok)
         przejscie1(il, bok)
-        il = il - 1
+        il -= 1
 
 tracer(0)
-piramida(3)
+piramida(10)
 update()
 mainloop()
