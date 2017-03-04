@@ -42,6 +42,7 @@ def kwadrat(kolor1):
 def rysuj(slowo):
     p.bk(len(slowo)/2*bok)
     for znak in slowo:
+        kolor = "white"
         #wybor koloru
         if znak in samogloski:
             kolor = "red"
@@ -54,7 +55,7 @@ def rysuj(slowo):
             prostokat(kolor)
         elif znak in dol1:
             do(kolor)
-        else:
+        elif kolor != "white":
             kwadrat(kolor)
         p.pu()
         p.fd(bok)
